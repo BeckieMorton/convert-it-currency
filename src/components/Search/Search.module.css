@@ -1,0 +1,8 @@
+.searchContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.searchBox {
+  padding: 1em;
+}
