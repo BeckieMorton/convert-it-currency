@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Header = () => {
-  return <div>Header</div>;
+  return <div>Currency Converter & Exchange Rate</div>;
 };
