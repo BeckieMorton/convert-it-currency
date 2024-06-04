@@ -18,14 +18,6 @@ a:hover {
   color: #ea1e63;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -40,4 +32,18 @@ button {
 button:hover {
   background-color: #ea1e63;
   transform: scale(1.1);
+}
+
+input {
+  padding: 0.8em;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+select {
+  padding: 0.8em;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

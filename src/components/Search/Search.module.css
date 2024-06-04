@@ -4,10 +4,19 @@
 }
 
 .searchBox {
-  padding: 1em;
+  padding: 0.5em;
   border: 1px solid #47a200;
+  position: relative;
 }
 
 .searchBox p {
   text-align: left;
+}
+
+.searchBox img {
+  max-width: 30px;
+  padding: 0.8em;
+  border-radius: 40px;
+  border: 1px solid grey;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
