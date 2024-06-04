@@ -5,6 +5,7 @@ export const Result = ({ fromCurrency, toCurrency }) => {
   const exchangeRateAPI = `https://v6.exchangerate-api.com/v6/e4e59e71cba709378bb2bfbc/latest/${fromCurrency}`;
   const [exchangeInfo, setExchangeInfo] = useState();
   const [conversionRate, setConversionRate] = useState(null);
+  const [amount, setAmount] = useState();
 
   const fetchExchange = async () => {
     try {
@@ -36,11 +37,29 @@ export const Result = ({ fromCurrency, toCurrency }) => {
 
   return (
     <div className={styles.resultsContainer}>
-      <h3>Result</h3>
-      <p>
-        1 - {fromCurrency} = {conversionRate} - {toCurrency}
-      </p>
-      <button onClick={fetchExchange}>Get Exchange Rate</button>
+      <div className={styles.resultsBox}>
+        <h3>Amount</h3>
+        <p>
+          <input
+            type="number"
+            value={amount}
+            min="1"
+            onChange={(e) => setAmount(Number(e.target.value))}
+            placeholder="Enter amount"
+          />
+        </p>
+      </div>
+      <div className={styles.resultsBox}>
+        <h3>Result</h3>
+        <p>
+          <button onClick={fetchExchange}>Get Exchange Rate</button>
+          <p>
+            {amount}&nbsp;{fromCurrency} = {Math.round(conversionRate * amount)}
+            &nbsp;
+            {toCurrency}
+          </p>
+        </p>
+      </div>
     </div>
   );
 };

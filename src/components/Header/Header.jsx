@@ -1,5 +1,9 @@
-import React from "react";
+import styles from "./Header.module.css";
 
 export const Header = () => {
-  return <div>Currency Converter & Exchange Rate</div>;
+  return (
+    <div className={styles.headerContainer}>
+      <h1>Currency Converter & Exchange Rate</h1>
+    </div>
+  );
 };
