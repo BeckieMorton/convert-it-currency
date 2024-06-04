@@ -19,16 +19,9 @@ export const Search = () => {
 
   return (
     <div>
-      <h3>Search</h3>
       <div className={styles.searchContainer}>
         <div className={styles.searchBox}>
-          <p>From</p>
-        </div>
-        <div className={styles.searchBox}></div>
-        <div className={styles.searchBox}>
-          <p>To</p>
-        </div>
-        <div className={styles.searchBox}>
+          <label>From</label>
           <select
             value={fromCurrency}
             onChange={(event) => setFromCurrency(event.target.value)}
@@ -54,6 +47,7 @@ export const Search = () => {
           </button>
         </div>
         <div className={styles.searchBox}>
+          <label>To</label>
           <select
             value={toCurrency}
             onChange={(event) => setToCurrency(event.target.value)}

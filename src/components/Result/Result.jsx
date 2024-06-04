@@ -38,8 +38,8 @@ export const Result = ({ fromCurrency, toCurrency }) => {
   return (
     <div className={styles.resultsContainer}>
       <div className={styles.resultsBox}>
-        <h3>Amount</h3>
         <p>
+          <label style={{ textAlign: "left" }}>Amount</label>
           <input
             type="number"
             value={amount}
@@ -50,14 +50,15 @@ export const Result = ({ fromCurrency, toCurrency }) => {
         </p>
       </div>
       <div className={styles.resultsBox}>
-        <h3>Result</h3>
         <p>
-          <button onClick={fetchExchange}>Get Exchange Rate</button>
-          <p>
-            {amount}&nbsp;{fromCurrency} = {Math.round(conversionRate * amount)}
-            &nbsp;
-            {toCurrency}
-          </p>
+          <button onClick={fetchExchange}>Convert</button>
+        </p>
+      </div>
+      <div className={styles.resultsBox}>
+        <p>
+          {amount}&nbsp;{fromCurrency} = {Math.round(conversionRate * amount)}
+          &nbsp;
+          {toCurrency}
         </p>
       </div>
     </div>

@@ -1,8 +1,24 @@
 .resultsContainer {
   align-items: center;
   text-align: center;
-  padding: 2em;
-  border: 1px solid black;
+  padding: 1em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.resultsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.resultsBox input {
+  width: 330px;
+}
+
+.resultsBox label {
+  padding-top: 4em;
+  padding-bottom: 0.5em;
 }
