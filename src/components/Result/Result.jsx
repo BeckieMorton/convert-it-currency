@@ -55,8 +55,9 @@ export const Result = ({ fromCurrency, toCurrency }) => {
         </p>
       </div>
       <div className={styles.resultsBox}>
-        <p>
-          {amount}&nbsp;{fromCurrency} = {Math.round(conversionRate * amount)}
+        <p className={styles.conversionTxt}>
+          {amount}&nbsp;{fromCurrency} =&nbsp;
+          {Number((conversionRate * amount).toFixed(2))}
           &nbsp;
           {toCurrency}
         </p>

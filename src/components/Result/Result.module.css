@@ -15,10 +15,15 @@
 }
 
 .resultsBox input {
-  width: 330px;
+  width: 310px;
 }
 
 .resultsBox label {
-  padding-top: 4em;
+  padding-top: 1em;
   padding-bottom: 0.5em;
+}
+
+.conversionTxt {
+  padding: 0.5em;
+  font-size: 26px;
 }

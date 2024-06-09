@@ -1,7 +1,7 @@
 body {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: "Lato", sans-serif;
-
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,6 +33,7 @@ input {
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Roboto Mono", sans-serif;
 }
 
 select {
@@ -40,4 +41,5 @@ select {
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Roboto Mono", sans-serif;
 }
